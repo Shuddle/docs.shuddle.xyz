@@ -1,0 +1,35 @@
+import YouTube from "react-youtube";
+
+# Generator options
+
+## Introduction
+
+In today's tutorial, you'll learn how to configure the generator for your project. This tool allows your users to create characters by combining various elements. They can download these characters or use them in the editor or other creations.
+
+<YouTube
+  videoId="2g811Eo7K8U"
+  style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}
+  opts={{
+    height: "390",
+    width: "640",
+    playerVars: {
+      autoplay: 0,
+    },
+  }}
+/>
+
+## Find the generator configuration page
+
+First up, let's connect to your admin dashboard. Navigate to your project, access the manage page, and then click on the generator tab. The generator functions with a layered system, similar to how NFTs work, where each layer represents a part of your character. To bring your character to life, you'll need to overlay multiple layers.
+
+## Create your first layer
+
+Let's set up your first layer! Click on 'Add category' to begin. We'll start with a category called 'Head'—this will form the base of our character. Fill in the name, and let's tweak a few settings before we create it. The 'Order of Render' determines the layer's depth; lower values mean closer to the back. Since it's our base layer, we'll keep it at 1. Next, turn off 'User can edit,' as our character's head will be unique and shouldn't be altered by the user. Disable 'User can randomize' too, as we won't need random changes here. Ensure 'Transparent option' is unchecked because we always want the head to be visible. Confirm these settings, and your category is ready. Now, let's add the asset for the head by clicking the + button. Notice how the head is automatically starred? This means it will be selected by default. You can delete it if necessary by clicking the trash icon.
+
+## Other layers
+
+Now, let's add more personality with two more categories—one for mouths and one for eyes. I'll create the 'Mouths' category similarly. Since mouths will be above the head, we set the order to 2. Users should be able to choose and randomize between different mouths, so we'll enable those options. Make sure the 'Transparent option' is unchecked because we don't want characters without mouths. Save this and then repeat the process for the 'Eyes' category. Upload all necessary assets for each category.
+
+## Saving and testing
+
+After setting up everything, click 'Save changes' at the bottom of the screen. Then, you can open your project page from the sidebar to see your live project. Go ahead and select the generator tool. Congratulations, you can now play around with your character and see the magic happen!
