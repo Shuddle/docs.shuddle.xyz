@@ -12,9 +12,12 @@ const withNextra = nextra({
       ],
     ],
   },
+});
+
+export default {
+  ...withNextra(),
+  output: "export",
   images: {
     unoptimized: true,
   },
-});
-
-export default withNextra();
+};
