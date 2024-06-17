@@ -12,6 +12,9 @@ const withNextra = nextra({
       ],
     ],
   },
+  images: {
+    unoptimized: true,
+  },
 });
 
 export default withNextra();
