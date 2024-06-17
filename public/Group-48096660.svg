@@ -1,23 +1,11 @@
-export default {
-  logo: <span>Shuddle - Docs</span>,
-  chat: {
-    link: "https://shuddle.xyz",
-    icon: (
-      <svg
-        version="1.0"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1160.000000 1160.000000"
-        preserveAspectRatio="xMidYMid meet"
-        widths={24}
-        height={24}
-      >
-        <g
-          transform="translate(0.000000,1160.000000) scale(0.100000,-0.100000)"
-          fill="#E44F37"
-          stroke="none"
-        >
-          <path
-            d="M2401 11589 c-839 -65 -1605 -541 -2033 -1261 -175 -296 -280 -593
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1160.000000pt" height="1160.000000pt" viewBox="0 0 1160.000000 1160.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,1160.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M2401 11589 c-839 -65 -1605 -541 -2033 -1261 -175 -296 -280 -593
 -340 -963 l-23 -140 -3 -3315 c-3 -3445 -3 -3507 38 -3748 127 -743 585 -1410
 1232 -1794 296 -175 593 -280 963 -340 l140 -23 3315 -3 c3445 -3 3507 -3
 3748 38 743 127 1410 585 1794 1232 175 296 280 593 340 963 l23 140 3 3315
@@ -35,48 +23,11 @@ c3 3445 3 3507 -38 3748 -127 743 -585 1410 -1232 1794 -296 175 -593 280
 -111 106 -181 222 -224 372 -29 103 -31 304 -4 404 42 158 154 330 281 432
 181 146 439 210 660 163z m-4908 -5121 c398 -82 674 -446 650 -854 -21 -343
 -259 -636 -594 -732 -102 -29 -304 -31 -403 -4 -249 68 -456 248 -550 476 -43
-105 -61 201 -61 325 1 383 265 709 641 789 88 19 225 19 317 0z"
-          />
-          <path
-            d="M5610 7056 c-185 -33 -362 -103 -513 -203 -91 -60 -232 -195 -304
+105 -61 201 -61 325 1 383 265 709 641 789 88 19 225 19 317 0z"/>
+<path d="M5610 7056 c-185 -33 -362 -103 -513 -203 -91 -60 -232 -195 -304
 -291 -107 -142 -194 -339 -230 -519 -23 -120 -23 -356 0 -476 87 -437 399
 -801 815 -951 255 -91 563 -95 819 -10 381 128 689 437 806 810 45 142 61 247
 60 399 -1 337 -119 627 -355 871 -181 188 -389 302 -653 360 -96 21 -350 27
--445 10z"
-          />
-        </g>
-      </svg>
-    ),
-  },
-  project: {
-    link: null,
-  },
-  useNextSeoProps() {
-    return {
-      titleTemplate: "%s",
-    };
-  },
-  head: (
-    <>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/png" href="/logo.png" />
-    </>
-  ),
-  editLink: {
-    component: null,
-  },
-  feedback: {
-    content: null,
-  },
-  footer: {
-    text: (
-      <span>
-        {new Date().getFullYear()} ©{" "}
-        <a href="https://shuddle.xyz" target="_blank">
-          Shuddle
-        </a>
-        .
-      </span>
-    ),
-  },
-};
+-445 10z"/>
+</g>
+</svg>

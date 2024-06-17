@@ -1,13 +1,19 @@
+import { Callout } from "nextra/components";
 import YouTube from "react-youtube";
 
 # Generator options
 
+<Callout type="warning" emoji="⚠️">
+  The `Generator` button is only available if you purchase the `Generator`
+  function. If you do not have it and would like it, please contact us.
+</Callout>
+
 ## Introduction
 
-In today's tutorial, you'll learn how to configure the generator for your project. This tool allows your users to create characters by combining various elements. They can download these characters or use them in the editor or other creations.
+In this tutorial, you'll learn how to configure the generator for your project. This tool allows your users to create characters by combining various elements. They can download these characters or use them in the editor or other creations.
 
 <YouTube
-  videoId="2g811Eo7K8U"
+  videoId="6iqWvHPjccI"
   style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}
   opts={{
     height: "390",
@@ -20,16 +26,78 @@ In today's tutorial, you'll learn how to configure the generator for your projec
 
 ## Find the generator configuration page
 
-First up, let's connect to your admin dashboard. Navigate to your project, access the manage page, and then click on the generator tab. The generator functions with a layered system, similar to how NFTs work, where each layer represents a part of your character. To bring your character to life, you'll need to overlay multiple layers.
+First up, let's connect to your admin dashboard. Navigate to your project, access the manage page, and then click on the generator tab.
+
+![access_page](/images/dashboard/tools/generator/access_page.png)
+
+<Callout type="warning" emoji="⚠️">
+  If you see a lock icon next to the generator tab
+  ![locked_button](/images/dashboard/tools/generator/locked_button.png) it means
+  you don't have access to this feature. Please contact us if you'd like to
+  enable it.
+</Callout>
+
+The generator works on a layered system, similar to how NFTs work, where each layer represents a part of your character. To bring your character to life, you'll need to overlay multiple layers.
 
 ## Create your first layer
 
-Let's set up your first layer! Click on 'Add category' to begin. We'll start with a category called 'Head'—this will form the base of our character. Fill in the name, and let's tweak a few settings before we create it. The 'Order of Render' determines the layer's depth; lower values mean closer to the back. Since it's our base layer, we'll keep it at 1. Next, turn off 'User can edit,' as our character's head will be unique and shouldn't be altered by the user. Disable 'User can randomize' too, as we won't need random changes here. Ensure 'Transparent option' is unchecked because we always want the head to be visible. Confirm these settings, and your category is ready. Now, let's add the asset for the head by clicking the + button. Notice how the head is automatically starred? This means it will be selected by default. You can delete it if necessary by clicking the trash icon.
+### Available options
 
-## Other layers
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+      <th>Default value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Name of the category</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Order of render</td>
+      <td>Layer's depth (lower values mean closer to the back)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>User can choose</td>
+      <td>Is it updatable by user</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>User can randomize</td>
+      <td>User can randomize the choice</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Transparent option</td>
+      <td>Possibilty to have a "non"-choice where user can select "None"</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
 
-Now, let's add more personality with two more categories—one for mouths and one for eyes. I'll create the 'Mouths' category similarly. Since mouths will be above the head, we set the order to 2. Users should be able to choose and randomize between different mouths, so we'll enable those options. Make sure the 'Transparent option' is unchecked because we don't want characters without mouths. Save this and then repeat the process for the 'Eyes' category. Upload all necessary assets for each category.
+### Process to create a layer
+
+Let's set up your first layer! Click on `Add category` to begin.
+
+![add_category](/images/dashboard/tools/generator/add_category.png)
+
+Fill in the name, and let's tweak a few settings before we create it. The `Order of Render` determines the layer's depth; lower values mean closer to the back. If it's our base layer, you can keep it at 1. Disabling or enabling `User can choose`, will allow the user to choose the layer. `User can choose` will allow users to randomly select this category when he press the 'randomize' button. `Transparent option` create a "None" option in the category. Confirm yours settings, and your category is ready.
+
+Now, let's add the asset for the head by clicking the + button. You can delete it if necessary by clicking the trash icon.
+
+![add_assets](/images/dashboard/tools/generator/add_assets.png)
+
+## Set layer as default
+
+You can press the star icon to set the layer as the default. This means that when the user opens the generator, this layer will be pre-selected.
+
+![set_default](/images/dashboard/tools/generator/set_default.png)
 
 ## Saving and testing
 
-After setting up everything, click 'Save changes' at the bottom of the screen. Then, you can open your project page from the sidebar to see your live project. Go ahead and select the generator tool. Congratulations, you can now play around with your character and see the magic happen!
+After setting up everything, click `Save changes` at the bottom of the screen. Then, you can open your project page from the sidebar to see your live project. Go ahead and select the generator tool. Congratulations, you can now play around with your character and see the magic happen!

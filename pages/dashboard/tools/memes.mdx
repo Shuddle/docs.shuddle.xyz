@@ -1,0 +1,65 @@
+import { Callout } from "nextra/components";
+import YouTube from "react-youtube";
+
+# Memes options
+
+<Callout type="warning" emoji="⚠️">
+  The `Memes` button is only available if you purchase the `Memes` function. If
+  you do not have it and would like it, please contact us.
+</Callout>
+
+## Introduction
+
+In this tutorial, you’ll learn how to manage memes for your project. Memes can be viewed and downloaded from a dedicated community page and can also be directly used in the editor by clicking on the `Memes` button. This feature enables your community to reuse memes across all platforms and incorporate them into new content!
+
+<YouTube
+  videoId="YZN5vnTlHzY"
+  style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}
+  opts={{
+    height: "390",
+    width: "640",
+    playerVars: {
+      autoplay: 0,
+    },
+  }}
+/>
+
+## Find the memes page
+
+First, let’s head over to your admin dashboard. Navigate to your project, and then go to the meme page. Here, you can upload new memes and manage their statuses. There are three states: `Awaiting Approval`, `Published`, and `Archived`. Memes awaiting approval are newly uploaded and not yet live. Once approved, memes become visible to everyone. Archived memes are hidden from users but can be re-approved later.
+
+![find_memes](/images/dashboard/tools/memes/find_memes.png)
+
+## Add a new meme
+
+To add new memes, simply click on `Add Memes` at the bottom of your screen.
+
+![add_memes](/images/dashboard/tools/memes/add_memes.png)
+
+Use the `Upload Memes` button to select the memes you want to upload.
+
+![upload_memes](/images/dashboard/tools/memes/upload_memes.png)
+
+> Remember, you can upload up to **_10_** memes per batch, and the total batch size can be up to **_10MB_**. The optimal size for memes is **_1024x1024 pixels_**, and PNG is the best format.
+
+You’ll see them appear below where you can edit their names if needed—these names will be visible to your community and searchable. Feel free to remove any memes before confirming. When you’re ready, hit the `Submit Memes` button. Your memes will now be in the `Awaiting Approval` state.
+
+## Approve or archive memes
+
+Now, let’s approve some memes! Simply hover over the memes you want to approve and click on `Approve`.
+
+![approve_memes](/images/dashboard/tools/memes/approve_memes.png)
+
+To view approved memes, switch to the `Published` tab. Here, you can archive or unapprove memes by hovering over them. Now, let’s go to the `Archive` tab. In this section, you can restore or permanently delete memes.
+
+<Callout type="warning" emoji="⚠️">
+  Deleted memes cannot be recovered. Please be careful when deleting memes.
+</Callout>
+
+## Viewing memes
+
+To see your work in action, click on `Open Project Page` in the sidebar to view your live project.
+
+![open_memes_page](/images/dashboard/tools/memes/open_memes_page.png)
+
+Select the memes tool. Here, you can browse all memes, search for specific ones, or sort them!
